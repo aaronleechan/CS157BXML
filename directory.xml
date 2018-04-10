@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="directory.xsd">
+    <person gender="male">
+        <name>Ayesha Malik</name>
+        <email>amalik@sjsu.edu</email>
+    </person>
+    <person gender="male">
+        <name>Sean Sullivan</name>
+        <email>ssullivan@mac.com</email>
+    </person>
+    <person gender="female">
+        <name>Mary Jane</name>
+        <email>mjane@google.com</email>
+    </person>
+    <person gender="male">
+        <name> Naveen Balani </name>
+        <email>nblani@yahoo.com</email>
+    </person>
+</directory>

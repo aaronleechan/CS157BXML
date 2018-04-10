@@ -1,0 +1,25 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="article_type">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="author" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="date" type="xs:string"/>
+        <xs:attribute name="level" type="xs:string"/>
+    </xs:complexType>
+    <xs:element name="article" type="article_type"/>
+    <xs:complexType name="journal_type">
+        <xs:sequence>
+            <xs:element ref="article" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="title" type="xs:string"/>
+        <xs:attribute name="publisher" type="xs:string"/>
+    </xs:complexType>
+    <xs:element name="journal" type="journal_type"/>
+    <xs:complexType name="catalog_type">
+        <xs:sequence>
+            <xs:element ref="journal" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="catalog" type="catalog_type"/>
+</xs:schema>
